@@ -36,9 +36,9 @@ Outras bibliotecas poderão ser adicionadas conforme a evolução do projeto.
 
 O desenvolvimento deste projeto será coordenado por:
 
-- 👨‍💻 **Pedro Veiga**
-- 👩‍💻 **Sophia Kalil**
-- 👩‍💻 **Eduardo Tomazela**
+- 👨‍💻 **Pedro Veiga** (Automação WEB)
+- 👩‍💻 **Sophia Kalil** (Automação Local)
+- 👩‍💻 **Eduardo Tomazela** (Apoio)
 
 ---
 
@@ -63,6 +63,14 @@ Para manter organização e qualidade no código, serão utilizadas boas prátic
 - 🔍 **Pull Requests para revisão de código** (não vamos utilizar porque eu (Eduardo Tomazela) não estou querendo perder tempo revisando o que vocês estão querendo subir no repositório kkk to colocando fé nos DEVs)
 - 📜 Registro e documentação das alterações
 - 🧩 Integração contínua das melhorias no projeto
+
+## 📌 Instruções
+
+As documentações com o detalhamento das atividades e requisitos de cada escopo do projeto (**WEB** e **Local**) estão em elaboração.
+
+Esses documentos servirão como guia para o desenvolvimento das funcionalidades de automação.
+
+📅 **Previsão de disponibilização: 08/03/2026**
 
 ---
 
