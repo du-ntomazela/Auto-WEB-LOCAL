@@ -34,7 +34,6 @@ Outras bibliotecas poderão ser adicionadas conforme a evolução do projeto.
 
 ## 👨‍💻 Time de Desenvolvimento
 
-O desenvolvimento deste projeto será coordenado por:
 
 - 👨‍💻 **Pedro Veiga** (Automação WEB)
 - 👩‍💻 **Sophia Kalil** (Automação Local)
