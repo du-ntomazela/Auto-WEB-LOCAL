@@ -65,11 +65,9 @@ Para manter organização e qualidade no código, serão utilizadas boas prátic
 
 ## 📌 Instruções
 
-As documentações com o detalhamento das atividades e requisitos de cada escopo do projeto (**WEB** e **Local**) estão em elaboração.
+A documentação referente à automação **WEB** (espec_web.md) já foi disponibilizada neste repositório.
 
-Esses documentos servirão como guia para o desenvolvimento das funcionalidades de automação.
-
-📅 **Previsão de disponibilização: 08/03/2026**
+A documentação referente à automação **LOCAL** ainda será publicada. A previsão de liberação permanece **08/03/2026**.
 
 ---
 
