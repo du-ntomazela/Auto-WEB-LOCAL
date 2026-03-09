@@ -314,6 +314,290 @@ Essa separação facilita:
 - desenvolvimento colaborativo entre múltiplos desenvolvedores
 ---
 
+---
+
+# 📚 Bibliotecas Recomendadas por Etapa da Automação
+
+A automação será desenvolvida principalmente utilizando **Selenium WebDriver** para controle do navegador e **bibliotecas nativas do Python** para manipulação de arquivos, tempo de execução e organização do fluxo.
+
+Abaixo estão as bibliotecas recomendadas para cada etapa do processo.
+
+---
+
+## 🌐 Controle do Navegador
+
+Biblioteca principal utilizada para automação Web.
+
+**Biblioteca**
+
+- selenium
+
+**Responsabilidade**
+
+- Abrir navegador
+- Navegar entre páginas
+- Localizar elementos da interface
+- Preencher campos
+- Clicar em botões
+- Executar ações na página
+- Extrair informações da página
+
+Exemplo de uso nas etapas:
+
+- Inicialização do WebDriver
+- Login no portal
+- Navegação até Interfaces DFE
+- Busca da seção CONECTOR SAP
+- Clique no link de download
+
+---
+
+## 🚗 Gerenciamento do WebDriver
+
+Para evitar problemas com versão do navegador.
+
+**Biblioteca recomendada**
+
+- webdriver-manager
+
+**Responsabilidade**
+
+- Baixar automaticamente a versão correta do ChromeDriver
+- Evitar configuração manual do driver
+- Simplificar setup da automação
+
+Exemplo de uso:
+
+Inicialização do navegador.
+
+---
+
+## 📁 Manipulação de Arquivos e Diretórios
+
+Biblioteca nativa do Python.
+
+**Biblioteca**
+
+- os
+
+**Responsabilidade**
+
+- Criar pasta de downloads
+- Verificar existência de arquivos
+- Validar se download foi concluído
+- Obter tamanho de arquivos
+- Manipular caminhos de diretórios
+
+Exemplo de uso nas etapas:
+
+- Configuração da pasta de download
+- Validação do arquivo baixado
+- Organização dos arquivos baixados
+
+---
+
+## ⏱ Controle de Tempo de Execução
+
+Biblioteca nativa utilizada para pequenas pausas no script.
+
+**Biblioteca**
+
+- time
+
+**Responsabilidade**
+
+- Aguardar carregamento de páginas
+- Controlar tempo de espera entre ações
+- Aguardar conclusão de download
+
+Observação:
+
+Sempre que possível deve-se priorizar os **Waits do Selenium** em vez de pausas fixas.
+
+---
+
+## ⏳ Esperas Inteligentes no Selenium
+
+Recurso próprio do Selenium.
+
+**Biblioteca**
+
+- selenium.webdriver.support.ui
+- selenium.webdriver.support.expected_conditions
+
+**Responsabilidade**
+
+- Esperar elementos aparecerem na tela
+- Esperar elementos ficarem clicáveis
+- Esperar carregamento de páginas
+
+Exemplo de uso nas etapas:
+
+- Esperar carregamento da página de login
+- Esperar botão de login aparecer
+- Esperar links de download serem carregados
+
+---
+
+## 📊 Manipulação de Versões
+
+Biblioteca recomendada para comparação correta de versões.
+
+**Biblioteca recomendada**
+
+- packaging
+
+**Responsabilidade**
+
+- Comparar versões de forma correta
+
+Exemplo:
+
+3.10.1 > 3.9.9
+
+Isso evita erros comuns ao comparar versões como texto.
+
+---
+
+## 🔐 Gerenciamento de Credenciais
+
+Para manter segurança no projeto.
+
+**Bibliotecas recomendadas**
+
+- python-dotenv
+- json
+
+**Responsabilidade**
+
+- Ler variáveis de ambiente
+- Armazenar credenciais fora do código
+- Carregar configurações externas
+
+Exemplo de arquivos:
+
+.env  
+credencial.json
+
+---
+
+## 📑 Registro de Logs
+
+Biblioteca nativa recomendada para rastrear execução da automação.
+
+**Biblioteca**
+
+- logging
+
+**Responsabilidade**
+
+- Registrar erros
+- Registrar downloads realizados
+- Registrar sucesso ou falhas da automação
+- Facilitar troubleshooting
+
+---
+
+## 📦 Resumo das Bibliotecas Utilizadas
+
+Bibliotecas principais do projeto:
+
+- selenium
+- webdriver-manager
+- os
+- time
+- logging
+
+Bibliotecas auxiliares recomendadas:
+
+- python-dotenv
+- packaging
+
+---
+
+---
+
+# 📦 Instalação das Dependências do Projeto
+
+Após criar e ativar o ambiente virtual (`venv`), é necessário instalar as bibliotecas utilizadas pela automação.
+
+Todas as dependências do projeto estão listadas no arquivo:
+
+```
+requirements.txt
+```
+
+---
+
+## 📍 Passo 1 — Acessar o diretório do projeto
+
+Abra o terminal no diretório do projeto.
+
+Você pode utilizar:
+
+- Terminal integrado do **VS Code**
+- **Prompt de Comando (CMD)**
+
+Certifique-se de que o ambiente virtual está ativado. O terminal deverá exibir algo semelhante a:
+
+```
+(venv) C:\caminho\do\projeto>
+```
+
+---
+
+## ⚙️ Passo 2 — Instalar as dependências
+
+Execute o seguinte comando no terminal para instalar todas as bibliotecas necessárias:
+
+```bash
+pip install -r requirements.txt
+```
+
+Esse comando fará a instalação automática de todas as dependências utilizadas pela automação.
+
+---
+
+## 📚 Principais bibliotecas instaladas
+
+Entre as bibliotecas que serão instaladas estão:
+
+- **selenium** → Automação e interação com aplicações Web  
+- **webdriver-manager** → Gerenciamento automático do WebDriver  
+- **python-dotenv** → Leitura de variáveis de ambiente (.env)  
+- **packaging** → Comparação correta de versões de software  
+
+---
+
+## ✅ Verificar instalação
+
+Para confirmar que as bibliotecas foram instaladas corretamente, execute:
+
+```bash
+pip list
+```
+
+O terminal exibirá todas as bibliotecas instaladas no ambiente virtual.
+
+---
+
+## 💡 Boas práticas
+
+Sempre que for trabalhar neste projeto:
+
+1. Acesse o diretório do projeto
+2. Ative o ambiente virtual
+
+```
+venv\Scripts\activate
+```
+
+3. Execute os scripts Python dentro da venv
+
+Isso garante que todas as dependências do projeto sejam utilizadas corretamente.
+
+---
+
 # 🧑‍💻 Responsáveis pelo desenvolvimento
 
 DEV:
