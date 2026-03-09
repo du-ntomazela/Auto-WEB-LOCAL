@@ -70,5 +70,59 @@ A documentação referente à automação **WEB** (espec_web.md) já foi disponi
 A documentação referente à automação **LOCAL** ainda será publicada. A previsão de liberação permanece **08/03/2026**.
 
 ---
+## 🧪 Configuração do Ambiente Virtual (venv)
+
+Para garantir que todas as dependências do projeto sejam instaladas de forma isolada, recomenda-se utilizar um **ambiente virtual Python (venv)**.
+
+O ambiente virtual permite que as bibliotecas utilizadas neste projeto não interfiram em outras instalações de Python do seu sistema.
+
+### 📍 Passo 1 — Acessar o diretório do projeto
+
+Abra o terminal no diretório do projeto.
+
+Você pode utilizar:
+
+- **Terminal integrado do VS Code**
+- **Prompt de Comando (CMD)**
+
+Certifique-se de estar dentro da pasta do repositório antes de executar os comandos.
+
+---
+
+### ⚙️ Passo 2 — Criar o ambiente virtual
+
+Execute o seguinte comando para criar o ambiente virtual chamado **venv**:
+
+```bash
+python -m venv venv
+```
+
+Este comando irá criar uma pasta chamada **venv** contendo todos os arquivos necessários para o ambiente virtual.
+
+---
+
+### ▶️ Passo 3 — Ativar o ambiente virtual
+
+Após criar o ambiente virtual, execute o comando abaixo para ativá-lo:
+
+```bash
+venv\Scripts\activate
+```
+
+Se tudo ocorrer corretamente, o terminal passará a exibir algo semelhante a:
+
+```bash
+(venv) C:\caminho\do\projeto>
+```
+
+Isso indica que o ambiente virtual está ativo.
+
+---
+
+### 💡 Observação
+
+Sempre que for trabalhar neste projeto, é recomendável ativar o **venv** antes de executar scripts Python ou instalar bibliotecas.
+
+---
 
 🚀 Este repositório será o ponto central para desenvolvimento e evolução da **automação de atualização da aplicação Java em ambiente Web e Local**.
