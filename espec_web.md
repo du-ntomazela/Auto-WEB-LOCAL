@@ -256,7 +256,7 @@ automacao-web/
 │
 ├── .gitignore               # Arquivos e pastas ignorados pelo Git
 │
-├── requirements.txt         # Dependências Python do projeto
+├── web_requirements.txt         # Dependências Python do projeto
 │
 └── README.md                # Documentação principal do repositório
 ```
@@ -524,7 +524,7 @@ Após criar e ativar o ambiente virtual (`venv`), é necessário instalar as bib
 Todas as dependências do projeto estão listadas no arquivo:
 
 ```
-requirements.txt
+web_requirements.txt
 ```
 
 ---
@@ -551,7 +551,7 @@ Certifique-se de que o ambiente virtual está ativado. O terminal deverá exibir
 Execute o seguinte comando no terminal para instalar todas as bibliotecas necessárias:
 
 ```bash
-pip install -r requirements.txt
+pip install -r web_requirements.txt
 ```
 
 Esse comando fará a instalação automática de todas as dependências utilizadas pela automação.
